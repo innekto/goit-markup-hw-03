@@ -26,18 +26,43 @@ ul {
   list-style: none;
 }
 
-/* class container для div который будет оборачивать контент секции */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+
+/* padding for sections */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
+
+/* class container для div который будет оборачивать контент секции */
+.page-header {
+  background-color: var(--white-color);
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  /* padding-top: 25px; */
+}
 .container {
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid tomato;
-  width:1200px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
-
-
 
 /* header styles */
 
@@ -73,7 +98,7 @@ ul {
 }
 
 .current {
-  color:var(--active-text-color);
+  color: var(--active-text-color);
 }
 .contact-me {
   color: var(--secondary-text-color);
@@ -93,6 +118,7 @@ ul {
 
 .hero {
   background-color: var(--background-color);
+  /* margin-bottom: 94px; */
 }
 
 .headline {
@@ -103,16 +129,18 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin: 0;
-  /* padding: 0; */
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 696px;
 }
 
 .service {
-  display:inline-block;
-  border: 1px solid var(--active-text-color);
+  /* display: inline-block;
+  border: 0px solid transparent;
   border-radius: 4px;
   padding: 10px 32px;
-  min-width: 216px;
+  min-width: 216px; */
   cursor: pointer;
   color: var(--white-color);
   background-color: var(--active-text-color);
@@ -130,14 +158,17 @@ ul {
 .priorities {
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  padding-left: 0;
+  display: flex;
 }
+
 .benefit-item {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .benefit-item-discription {
@@ -153,6 +184,11 @@ ul {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.what-to-do-list,
+.our-team-list {
+  display: flex;
 }
 
 .team {
@@ -171,6 +207,7 @@ ul {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .work-member {
@@ -187,6 +224,7 @@ ul {
   background-color: var(--background-color);
 }
 .logo-sec {
+  display: inline-block;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -194,6 +232,8 @@ ul {
   letter-spacing: 0.03em;
   color: var(--active-text-color);
   text-decoration: none;
+  margin-bottom: 20px;
+  /* padding-top: 60px; */
 }
 .logo-second-part-two {
   color: var(--white-color);
@@ -218,6 +258,21 @@ ul {
 .contact-me-to:hover,
 .contact-me-to:focus {
   color: var(--active-text-color);
+}
+.adress-me {
+  margin-bottom: 9px;
+}
+.adress-me-tel {
+  /* padding-bottom: 60; */
+}
+
+.priorities-list,
+.footer-adress-list,
+.main-nav,
+.header-adress,
+.what-to-do-list,
+.our-team-list {
+  padding-left: 0;
 }
 /* portfolio styles */
 
@@ -244,14 +299,14 @@ ul {
   letter-spacing: 0.03em;
 }
 .visually-hidden {
- overflow: hidden;
- position: absolute;
- white-space: nowrap;
- clip: rect(0 0 0 0);
- clip-path: inset(50%);
- height: 1px;
- width: 1px;
-} 
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+}
 .example {
   font-size: 18px;
   line-height: 2;
